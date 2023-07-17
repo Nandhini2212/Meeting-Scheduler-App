@@ -5,3 +5,6 @@ body {
       backdrop-filter: blur(8px);
       height: 100%;
 }
+.userinfo-name-div{
+  margin-left: auto;
+}

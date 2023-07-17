@@ -14,11 +14,10 @@
   }
   
   .home-nav-logo {
-    background-image: url("C:\Users\ravin\OneDrive\Pictures\mslogo2.png");
+    background-image: url("../photo/applogoname.png");
     width: 15%;
   height: 10vh;  
 
-  background-image: url("C:\Users\ravin\OneDrive\Pictures\mslogo2.png");
   background-size: cover;
   background-position: center;
   border-radius: 12px 12px 12px 12px;
@@ -57,9 +56,7 @@
     justify-content: center;
     /* padding-top: 30%; */
   /* align-items: center; */
- 
-    
- 
+   
     line-height: 2;
   }
   
@@ -83,13 +80,14 @@
       /* transition: transform .2s; */
       cursor: pointer;
       
+      
     }
   /* .continue-btn-home:hover{
     transform: scale(1.5);
   } */
  
   .home-side-image{
-    background-image: url("C:\Users\ravin\OneDrive\Pictures\side-pc2.png");
+    /* background-image: url("C:\Users\ravin\OneDrive\Pictures\side-pc2.png"); */
     width: 500px;
     
   height: 758px;  
@@ -99,8 +97,82 @@
   border-radius: 12px 12px 12px 12px;
   }
   .home-intro-content{
-    padding-top: 200px;
-    font-size: 30px;
-    max-width: 900px;
-    margin-left: 0;
+    padding-top: 130px;
+    font-size: 1.4rem;
+    max-width: 800px;
+    
+    
   }
+  .main-home{
+    font-family: 'poppins';
+    font-size: 15px;
+  }
+  .home-intro-content-2{
+   
+    font-size: 1.5rem;
+    max-width: 700px;
+    
+  }
+  .home-content-two {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-right: 100px;
+    
+  }
+
+  .step-heading {
+    margin-bottom: 20px;
+  }
+
+
+  .step-left{
+    width: 50%;
+    height: 400px;
+    text-align: left;
+    max-width: 300px;
+    border-style:dashed;
+    
+    border-image: linear-gradient(45deg, rgb(244, 184, 231), rgb(134, 26, 132)) 2;
+    /* border: 1px solid black; */
+  padding: 50px;
+
+   
+  }
+  .step-right{
+    width: 50%;
+    height: 400px;
+    text-align: auto;
+    max-width: 300px;
+    margin-left: auto;
+    border-style:dashed;
+    border-image: linear-gradient(45deg, rgb(244, 184, 231), rgb(134, 26, 132)) 2;
+    /* border: 1px solid black; */
+  padding: 50px;
+
+  
+  }
+.step-about{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 600px;
+}
+.img-home{
+  width: 100%;
+  height: 300px;
+}
+.main-img-home{
+  margin-top: 150px;
+  width: 500px;
+  height: 500px;
+}
+
+.curved-line {
+  color: #ede7e7;
+    width: 100%;
+    height: 50px;
+    margin-top: -50px;
+  
+}

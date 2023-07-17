@@ -1,0 +1,40 @@
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
+
+export default function Muicalender() {
+  const navigate = useNavigate();
+  const [selectedDate, setSelectedDate] = useState(null);
+
+  const handleDateChange = (date) => {
+    setSelectedDate(date);
+  };
+
+  const handleFinishClick = () => {
+    if (selectedDate) {
+      // Use the navigate function to redirect to the desired page with selected date as a route parameter
+      navigate(`/appointment-details/${selectedDate.format('YYYY-MM-DD')}/${selectedDate.format('HH:mm')}`);
+    }
+  };
+
+  return (
+    <div className='muicalenderdiv'> 
+      <div className='choosedate'>
+        <h1>Choose a Date:</h1>
+        <br />
+      </div>
+      <div>
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
+          <DemoContainer components={['DateTimePicker']}>
+            {/* Pass the selectedDate as the value prop to display the selected date */}
+            <DateTimePicker label="Choose your preferred Time" value={selectedDate} onChange={handleDateChange} />
+          </DemoContainer>
+        </LocalizationProvider>
+      </div>
+      <div className='user-next-btn' onClick={handleFinishClick}>Finish</div>
+    </div>
+  );
+}

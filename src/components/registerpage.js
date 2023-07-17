@@ -9,6 +9,7 @@ export default function Form(){
     const [error, setError] = useState(false);
     const handleSubmit = (e) => {
         e.preventDefault();
+        window.alert('Registered successfully!');
         const register={username,email,country,password}
         if (username === '' || email === '' || password === '') {
             setError(true);
@@ -85,9 +86,9 @@ export default function Form(){
                     <input onChange={handlePassword} className="input-password" value={password} type="password" placeholder="Password"/><br></br><br></br>
                     </div>
                     <div ><Link to="/login" className="sign-in-click">or Login here</Link></div>
-                    <button onClick={handleSubmit} className="continue-btn" type="submit">Continue</button>
+                    <button onClick={handleSubmit} className="continue-btn" type="submit"><Link to="/details" className="link-to-log">Continue</Link></button>
                 </form>
-            </div>
+            </div>  
         </div>
     );
 }

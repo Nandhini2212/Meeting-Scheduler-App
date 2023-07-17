@@ -107,3 +107,10 @@ form[name="register-form-1"]{
   color: white;
   text-decoration: none;
 }
+
+.link-to-log{
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 3px;
+}
+ 

@@ -1,5 +1,17 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { login } from "../redux/store";
+
 const LoginForm=()=>{
+    const [pname, setPname] = useState('');
+    const dispatch = useDispatch();
+  
+  
+    const handleChange = (e) => {
+      setPname(e.target.value);
+    }
+
 
     const[username,setName]=useState("");
    
@@ -74,12 +86,12 @@ const LoginForm=()=>{
                 <form name="register-form-1">
                     <div className="register-name-div"><h1>Login</h1></div>
                     <div className="input-div">
-                    <input onChange={handleName} className="input-username" value={username} type="text" placeholder="Username"/>
+                    <input onChange={handleChange} className="input-username" value={pname} type="text" placeholder="Username"/>
                     <br></br>
                     
                     <input onChange={handlePassword} className="input-password" value={password} type="password" placeholder="Password"/><br></br><br></br>
                     </div>
-                    <button onClick={handleSubmit} className="continue-btn" type="submit">Log Me In</button>
+                    <Link to="/user" className="link-to-log"><button onClick={()=>dispatch(login({ name: pname }))} className="continue-btn" type="submit">Log Me In</button></Link>
                 </form>
                 
             </div>
