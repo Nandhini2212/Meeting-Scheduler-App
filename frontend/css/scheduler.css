@@ -1,0 +1,147 @@
+
+ .schedule-container {
+    display: flex;
+    justify-content: center;
+    height: 720px;
+   
+  }
+  .day-column{
+    background-color: #1f1f1f;
+    padding: 50px;
+    border-radius: 10px;
+    margin: auto;
+  }
+  .day-name{
+    font-size: 35px;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 300px;
+
+  }
+  .day-column li{
+    list-style-type: none;
+  }
+  .day-name input{
+  
+        width: 50px;
+        height: 25px;
+        border-radius: 20px;
+/*       
+      #myCheckbox + label {
+        font-size: 18px;
+        line-height: 20px;
+      } */
+  }
+ #timingSelect{
+    width: 80px;
+        height: 40px;
+        margin-right: 20px;
+        margin-left: 20px;
+        border-radius: 10px;
+  }
+
+
+ 
+  .footer {
+
+    color: #ffffff;
+    
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-content {
+
+        display: flex;
+        margin-top: 100px;
+        padding-top: 100px;
+        flex: 1;
+        margin-left: 0;
+        padding-left: 100px;
+        justify-content: space-between;
+        gap: 300px; /* Add gap between sections */
+        background-color: rgb(93, 93, 93);
+      
+      
+  }
+  
+  .footer-section {
+    flex: 1;
+  }
+  
+  .footer-heading {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .footer-social-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .footer-social-links li {
+    margin-right: 10px;
+  }
+  
+  .footer-social-links a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+  }
+
+.finish-btn{
+  background-image: linear-gradient(to right, #690943 0%, #fd5ddd  51%, #f881d8  100%);
+  color: #ffffff;
+  padding: 12px ;
+  font-size: 16px;
+  width: 90%;
+  flex: 1;
+  font-weight: bold;
+
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+.finish-button-div{
+  justify-content: center;
+  text-align: center;
+
+}
+.link-to-finish{
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 3px;
+}
+ 
+ 
+  

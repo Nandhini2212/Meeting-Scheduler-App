@@ -1,0 +1,116 @@
+.entire-register-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Poppins',sans-serif;
+  margin-left: 150px;
+  margin-right: 150px;
+ 
+}
+
+.register-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  height: 80%;
+  /* margin-top: 5px;
+  padding-top: 20px; */
+  border-radius: 0 10px 10px 0;
+  flex-direction: column;
+  background: #1f1f1f;
+  /* background: rgba(200, 200, 200, 0.05); /* Greyish glassy background color */
+  /* backdrop-filter: blur(10px); */ 
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.199);
+}
+.register-name-div{
+  color: white;
+  flex: 1;
+  max-width: 350px;
+}
+.input-div input{
+  outline: 0;
+  flex: 1; 
+  background: #1f1f1f;
+  border-width: 0 0 2px;
+  width: 100%;
+  max-width: 400px;
+  color: aliceblue;
+  padding-top: 20px;
+
+
+/*   
+  background: rgba(9, 0, 0, 0.05); /* Greyish glassy background color */
+  /* backdrop-filter: blur(10px); */ 
+  border-image: linear-gradient(45deg, rgb(244, 184, 231), rgb(134, 26, 132)) 1;
+  border-image-slice: 1;
+  margin-bottom: 15px;
+
+  
+}
+
+.continue-btn {
+
+
+
+  background-image: linear-gradient(to right, #690943 0%, #fd5ddd  51%, #f881d8  100%);
+    color: #ffffff;
+    padding: 12px ;
+    font-size: 16px;
+    width: 100%;
+    flex: 1;
+    font-weight: bold;
+    max-width: 400px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+  
+  
+}
+.register-div-left{
+  width: 50%; /* Adjusted width to take half of the entire-register-div */
+  height: 80%;
+  background: #1b1b1b;
+  border-radius: 10px 0 0 10px;
+}
+.register-div-about{
+  height: 50%;
+  color: white;
+  font-size: large;
+  padding-left: 40px;
+  
+}
+.pic {
+  width: 100%;
+  height: 20vh;  
+
+  background-image: url("C:\Users\ravin\OneDrive\Pictures\mslogo2.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px 0 0 12px;
+}
+form[name="register-form-1"]{
+  
+  width:100%;
+}
+.sign-in-click{
+  display: flex;
+  margin-left: 110px;
+  justify-content: left;
+  align-items: left;
+  padding-bottom: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+.link-to-log{
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 3px;
+}
+ 

@@ -1,0 +1,194 @@
+.user-date{
+    text-align: right;
+    /* position:absolute; left:1200px; top:30px; */
+    margin-left: 1300px;
+}
+.sidebar.open {
+    transform: translateX(0);
+  }
+  
+.user-side-bar {
+    /* position: fixed; */
+    width: 120px;
+    height: 100vh;
+    background-color: #1f1f1f;
+   margin-top: 30px;
+    font-size: large;
+    color: #f881d8;
+  }
+.menu-button{
+    background-color: transparent;
+    /* background-image: linear-gradient(to right, #690943 0%, #fd5ddd  51%, #f881d8  100%); */
+    color: #f9f9f9;
+    padding: 15px ;
+    font-size: 30px;
+    /* width: 100%; */
+    
+    font-weight: bold;
+    /* max-width: 100px; */
+    margin-top: 10px;
+   height: 40px;
+   width: 50px;
+    border: none;
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+   
+    /* transition: background-color 0.3s ease; */
+    margin-left: 10px;
+    margin-bottom: 20px;
+    
+}
+.user-nav{
+    background: rgba(200, 200, 200, 0.07); 
+   
+    padding-bottom: 5px;
+}
+.user-side-bar li{
+    text-decoration: none;
+    color: rgb(250, 248, 248);
+    font-size: 17px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-right: 30px;
+   
+    
+}
+.user-side-bar ul{
+    list-style: none;
+    font-size: 5rem;
+    font-family: 'poppins';
+    
+}
+.user-side-bar li:hover {
+    cursor: pointer;
+    
+    border-bottom: rgb(162, 144, 179);
+    
+    border-bottom: 2px solid rgb(246, 141, 201);
+
+  }
+
+
+.user-navbar{
+    position: fixed;
+    z-index: 1;
+    top: 60px;
+    left: 0px;
+   
+    overflow-x: hidden;
+    transition: 1s;
+    width: 0;
+}
+.user-content {
+    transition: 1s;
+    transition: transform 1s ease;
+  }
+  
+  .user-content.open {
+    transform: translateX(-120px);
+    
+  }
+  
+
+
+.close-button {
+    background: #1f1f1f;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    margin-left: 70px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .close-button:hover {
+    background-color: #f881d8;
+  }
+  .user-content{
+    font-family: 'poppins','sans seriff';
+    font-size: 1.5rem;
+    margin-left: 50px;
+    line-height: 2;
+    
+  }
+  .your-meetings{
+    padding-bottom: 30px;
+  }
+  .meeting-info-div{
+    background: #1f1f1f;
+  justify-content: center;
+  margin-left: 50px;
+  padding-left: 50px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  margin-right: 500px;
+ 
+  border-style: solid;
+  
+  border-width: 0px 0px 0px 3px;
+  border-image: linear-gradient(45deg, rgb(244, 184, 231), rgb(134, 26, 132)) 100;
+  border-image-slice: 1;
+  margin-bottom: 40px;
+  }
+  .participant-profile{
+    display: flex;
+
+  }
+    .participant-profile-pic{
+        padding-right: 30px;
+    }
+
+.user-choices{
+    margin-left: 270px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-reschedule{
+    padding-right: 30px;
+    color: rgb(104, 144, 236);
+  
+  }
+  .user-cancel{
+    color: rgb(198, 20, 20);
+  }
+  .user-reschedule:hover{
+    color: rgb(160, 186, 246);
+    cursor: pointer;
+  }
+  .user-cancel:hover{
+    color: rgb(242, 128, 128);
+    cursor: pointer;
+  }
+  .create-new-meeting{
+    
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: auto;
+  
+
+  }
+  .create-new-meeting button{
+    
+    margin-bottom: auto;
+    
+    
+  }
+  /* .user-pic-1{
+    height: 100%;
+    width: 100px;
+    padding: 20px;
+  } */
+  .logo-size{
+    height: 40px;
+    width: 40px;
+  }
+  .participant-profile-pic{
+    height: 25px;
+    width: 25px;
+  }
