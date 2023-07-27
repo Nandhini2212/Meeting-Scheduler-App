@@ -1,0 +1,36 @@
+/* Url.css */
+.url-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .url-content {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .url-display {
+    display: flex;
+    align-items: center;
+  }
+  
+  .url-display p {
+    margin-right: 10px;
+  }
+  
+  .copy-button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .copy-button:hover {
+    background-color: #0056b3;
+  }
+  

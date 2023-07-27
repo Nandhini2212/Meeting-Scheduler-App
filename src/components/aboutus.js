@@ -25,7 +25,7 @@ function AboutUs() {
             <li>Customizable Invitations: Create professional and personalized meeting invitations with custom branding, agenda details, and attachments.</li>
             <li>Reminders and Notifications: Receive automatic reminders and notifications for upcoming meetings, ensuring you never miss an important appointment.</li>
             <li>Time Zone Support: Efficiently schedule meetings across different time zones with our intuitive time zone conversion feature.</li>
-            {/* <li>Analytics and Reporting: Gain valuable insights into your team's meeting patterns, attendee participation, and productivity with our comprehensive analytics dashboard.</li> */}
+            
           </ul>
         </div>
         

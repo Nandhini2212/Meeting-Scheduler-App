@@ -48,6 +48,7 @@ export default function Home(){
                     <div class="step-left">
                         <h2>1. Register and Set Up your Profile</h2>
                         <div className="img-home"><img className="img-home" src={require("../photo/setup.png")} alt="pic not found" /></div>
+                 
                     </div>
                     <div class="step-right">
                         <h2>2.Create Meeting: Provide meeting details and set up your availability.</h2>

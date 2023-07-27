@@ -1,5 +1,7 @@
+import axios from "axios";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 export default function Form(){
 
     const[username,setName]=useState("");
@@ -7,26 +9,58 @@ export default function Form(){
     const[country,setCountry]=useState('');
     const[password,setPassword]=useState('');
     const [error, setError] = useState(false);
+    const navigate=useNavigate();
     const handleSubmit = (e) => {
         e.preventDefault();
         window.alert('Registered successfully!');
-        const register={username,email,country,password}
-        if (username === '' || email === '' || password === '') {
-            setError(true);
-        } else {
-            
-            setError(false);
-        }
-        console.log(register);
 
-        fetch("http://localhost:8080/postuserdetails",{
-        method:"POST",
-        headers:{"Content-Type":"application/json"},
-        body:JSON.stringify(register)
+    //     const register={username,email,country,password}
+    //     if (username === '' || email === '' || password === '') {
+    //         setError(true);
+    //     } else {
+            
+    //         setError(false);
+    //     }
+    //     console.log(register);
+
+    //     fetch("http://localhost:8080/postuserdetails",{
+    //     method:"POST",
+    //     headers:{"Content-Type":"application/json"},
+    //     body:JSON.stringify(register)
         
-    }).then(()=>{
-        console.log(register)
-    })
+    // }).then(()=>{
+    //     console.log(register)   
+    // })
+    try{
+        axios.post("http://localhost:8181/api/v1/auth/register",{
+            "name":username,
+            "email":email,
+            "password":password
+        })
+        .then(res=>{
+            console.log(res.data);
+            localStorage.setItem("token",res.data.token);
+            // updateValue(username);
+            navigate("/details",{state:{username:username}});
+            console.log("success login")
+        })
+        // .catch(function (error) {
+        //     // if (error.response) {
+        //     //   console.log(error.response.data);
+        //     //   console.log(error.response.status);
+        //     //   console.log(error.response.headers);
+        //     // }
+        //     // console.log(error.response.status);
+        //     if(error && error.response && error.response.status!=403)
+        //         navigate("/home");
+        //     else
+        //         setAuthError("Account doesn't exist");
+        //   })
+        }
+        catch(error){
+            console.error("Error: " ,error);
+            alert("Password is Incorrect");
+        }
     };
     const handleName = (e) => {
         setName(e.target.value);

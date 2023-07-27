@@ -113,4 +113,8 @@ form[name="register-form-1"]{
   color: #ffffff;
   letter-spacing: 3px;
 }
+.link-text{
+  text-decoration: none;
+  color: #ffffff;
+}
  

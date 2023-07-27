@@ -1,13 +1,18 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 
-const AppointmentDetails = ({ date, time }) => {
-    console.log('date prop:', date);
-console.log('time prop:', time);
+const AppointmentDetails = () => {
+  const { date, time } = useParams();
+
   return (
-    <div className="appointment-details">
-      <h2>Appointment Details</h2>
-      <p>Date: {date}</p>
-      <p>Time: {time}</p>
+    <div className="appointment-details-container">
+      <div className="center-content">
+        <div className="success-message">
+          <p className="big-text">Your meeting has been successfully booked!</p>
+          <p className="big-text">Date: {date}</p>
+          <p className="big-text">Time: {time}</p>
+        </div>
+      </div>
     </div>
   );
 };
